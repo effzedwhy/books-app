@@ -1,17 +1,22 @@
-import { Fragment, useState } from 'react'
+import { Fragment, useState, useRef } from 'react'
+import CallAPI from '../RestUtility/callAPI'
+
 import './SearchForm.css'
 
-const SearchForm = () => {
-  const [userInput, setUserInput] = useState('');
+const SearchForm = fetchData => {
+  const [userInput, setUserInput] = useState('')
+  const ref = useRef()
+
   const inputChangeHandler = event => {
-    const input = event.target.value;
-    console.log(input);
-    setUserInput(input);
+    const input = event.target.value
+    console.log(input)
+    setUserInput(input)
   }
-  const searchHandler = () => {
+  const searchHandler = e => {
+    e.preventDefault()
     if (userInput !== '') {
-      // call books API
-      console.log('calling book search API');
+      console.log(fetchData)
+      console.log('calling book search API')
     }
   }
   return (
@@ -26,11 +31,20 @@ const SearchForm = () => {
               value={userInput}
               onChange={inputChangeHandler}
             ></input>
-            <button className='search-btn'
+            <button
+              className='search-btn'
               disabled={userInput === ''}
-              onClick={searchHandler}>Search</button>
+              onClick={searchHandler}
+              fetchData={fetchData}
+              ref={ref}
+            >
+              Search
+            </button>
           </div>
         </form>
+        <section>
+          <CallAPI />
+        </section>
       </section>
     </Fragment>
   )
