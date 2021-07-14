@@ -33,19 +33,22 @@
 }
 
 .search-btn {
+  cursor: pointer;
   background-color: white;
   border: 1px solid lightslategray;
   padding: 0 16px;
   height: 40px;
 }
 
+.search-btn:disabled{
+  cursor: not-allowed;
+}
 .search-btn:hover {
   box-shadow: 0 1px 10px lightgray;
 }
 .search-btn:active {
   box-shadow: none;
 }
-
 @media (max-width: 600px) {
   .search-container {
     flex-direction: column;
