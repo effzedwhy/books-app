@@ -1,0 +1,36 @@
+nav {
+  width: 100vw;
+  height: 50px;
+  background-color: #d8e2dc;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+nav > h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e5989b;
+  flex: 8;
+  margin: 0 20px;
+}
+
+h2 > a {
+  text-decoration-line: none;
+}
+
+nav > ul {
+  list-style-type: none;
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+li > a {
+  margin: 0 15px;
+  color: #3d405b;
+  font-weight: 700;
+  text-decoration-line: none;
+}
+li > a:hover,
+a.active {
+  border-bottom: 3px solid black;
+}
