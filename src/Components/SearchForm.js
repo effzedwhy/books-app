@@ -3,7 +3,7 @@ import { callAPI } from '../RestUtility/callAPI'
 
 import './SearchForm.css'
 
-const SearchForm = fetchData => {
+const SearchForm = () => {
   const [userInput, setUserInput] = useState('');
 
   const inputChangeHandler = event => {
