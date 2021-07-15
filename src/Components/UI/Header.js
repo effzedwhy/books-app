@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react'
-import './Header.css'
+import classes from './Header.module.css'
 import { NavLink, Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <Fragment>
       <header>
-        <nav className='nav'>
+        <nav className={classes.nav}>
           <h2>
             <Link to='/'>Bookie</Link>
           </h2>

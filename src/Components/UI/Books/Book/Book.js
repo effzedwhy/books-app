@@ -1,5 +1,6 @@
 import React from 'react'
 import classes from './Book.module.css'
+import Image from './Image'
 
 const Book = ({ book }) => {
   const title = book.volumeInfo.title
@@ -10,8 +11,13 @@ const Book = ({ book }) => {
       <div className={classes.titleDiv}>
         <h2>{title}</h2>
       </div>
-      {subtitle && <h3>{subtitle}</h3>}
-      {textSnippet && <p>{textSnippet}</p>}x
+      <div className={classes.info}>
+        <Image book={book} />
+        <div className={classes.text}>
+          {subtitle && <h3>{subtitle}</h3>}
+          {textSnippet && <p>{textSnippet}</p>}
+        </div>
+      </div>
     </div>
   )
 }

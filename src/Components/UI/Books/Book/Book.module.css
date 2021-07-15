@@ -22,6 +22,11 @@
   padding: 5px;
 }
 
+.info {
+  display: flex;
+  align-items: flex-start;
+}
+
 .titleDiv {
   border-bottom: 1px solid lightgray;
   background-color: lightsteelblue;

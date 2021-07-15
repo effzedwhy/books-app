@@ -1,10 +1,10 @@
 import { Fragment, useState } from 'react'
 import { callAPI } from '../RestUtility/callAPI'
 
-import './SearchForm.css'
+import classes from './SearchForm.module.css'
 
 const SearchForm = ({ setBookData }) => {
-  const [userInput, setUserInput] = useState('');
+  const [userInput, setUserInput] = useState('')
 
   const inputChangeHandler = event => {
     const input = event.target.value
@@ -12,30 +12,30 @@ const SearchForm = ({ setBookData }) => {
     setUserInput(input)
   }
   const searchHandler = e => {
-    e.preventDefault();
+    e.preventDefault()
     if (userInput !== '') {
-      console.log('calling book search API');
+      console.log('calling book search API')
       callAPI(userInput).then(result => {
-        console.log('result', result);
-        setBookData(result);
-        setUserInput('');
-      });
+        console.log('result', result)
+        setBookData(result)
+        setUserInput('')
+      })
     }
   }
   return (
     <Fragment>
-      <section className='form-container'>
-        <form className='search-form' onSubmit={searchHandler}>
-          <label className='search-text'>Search</label>
-          <div className='search-container'>
+      <section className={classes['form-container']}>
+        <form className={classes['search-form']} onSubmit={searchHandler}>
+          <label className={classes['search-text']}>Search</label>
+          <div className={classes['search-container']}>
             <input
               placeholder='Search by name, author or keyword'
-              className='search-box'
+              className={classes['search-box']}
               value={userInput}
               onChange={inputChangeHandler}
             ></input>
             <button
-              className='search-btn'
+              className={classes['search-btn']}
               disabled={userInput === ''}
               type='submit'
             >
