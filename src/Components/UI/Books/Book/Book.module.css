@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .bookLayout {
   border: 1px solid lightgray;
   padding: 16px 16px;
@@ -18,8 +17,15 @@
   font-size: medium;
   margin: 2px 0px;
 }
-    border-bottom: 1px solid lightgray;
-    background-color: lightsteelblue;
-    color: white;
-    padding: 2px;
+
+.bookLayout p {
+  padding: 5px;
+}
+
+.titleDiv {
+  border-bottom: 1px solid lightgray;
+  background-color: lightsteelblue;
+  color: white;
+  padding: 8px;
+  margin-bottom: 10px;
 }
