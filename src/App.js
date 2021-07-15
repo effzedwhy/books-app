@@ -11,7 +11,7 @@ function App() {
   }
   return (
     <BrowserRouter>
-      <div style={{ textAlign: "center" }}>
+      <div>
         <Header />
         <SearchForm setBookData={setBookData} />
         {books && <Books books={books} />}

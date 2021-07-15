@@ -8,7 +8,7 @@ const SearchForm = ({ setBookData }) => {
 
   const inputChangeHandler = event => {
     const input = event.target.value
-    console.log(input)
+
     setUserInput(input)
   }
   const searchHandler = e => {
