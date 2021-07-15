@@ -10,7 +10,6 @@ const Books = props => {
       {books.map(book => (
         <li key={book.id}>
           <Book book={book} />
-
         </li>
       ))}
     </ul>

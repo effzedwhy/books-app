@@ -30,6 +30,11 @@
   margin-right: 10px;
   width: 400px;
   padding: 5px;
+  border: 1px solid lightslategray;
+  box-shadow: 2px 4px lightsteelblue;
+}
+.search-box:focus {
+  outline: none;
 }
 
 .search-btn {
@@ -38,13 +43,14 @@
   border: 1px solid lightslategray;
   padding: 0 16px;
   height: 40px;
+  box-shadow: 2px 4px lightsteelblue;
 }
 
-.search-btn:disabled{
+.search-btn:disabled {
   cursor: not-allowed;
 }
 .search-btn:hover {
-  box-shadow: 0 1px 10px lightgray;
+  box-shadow: none;
 }
 .search-btn:active {
   box-shadow: none;

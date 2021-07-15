@@ -1,11 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import classes from './Book.module.css'
 import Image from './Image'
+import BookDetail from '../../BookModal/BookDetail'
 
 const Book = ({ book }) => {
+  const [showDetail, setShowDetail] = useState(false)
   const title = book.volumeInfo.title
   const subtitle = book.volumeInfo?.subtitle
   const textSnippet = book.searchInfo?.textSnippet
+
+  const moreButtonHandler = () => {
+    setShowDetail(true)
+  }
+
   return (
     <div className={classes.bookLayout}>
       <div className={classes.titleDiv}>
@@ -16,9 +23,12 @@ const Book = ({ book }) => {
         <div className={classes.text}>
           {subtitle && <h3>{subtitle}</h3>}
           {textSnippet && <p>{textSnippet}</p>}
-          <p>More Info</p>
+          <button className={classes.moreInfo} onClick={moreButtonHandler}>
+            More Info
+          </button>
         </div>
       </div>
+      {showDetail && <BookDetail />}
     </div>
   )
 }

@@ -35,3 +35,11 @@
   padding: 8px;
   margin-bottom: 10px;
 }
+
+.moreInfo {
+  border: none;
+  text-decoration: none;
+  padding: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
