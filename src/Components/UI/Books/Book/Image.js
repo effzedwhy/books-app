@@ -6,7 +6,7 @@ const Book = ({ book }) => {
 
   return (
     <div className={classes['image-container']}>
-      {image && <img src={image} alt={book.title}></img>}
+      {image && <img src={image} alt={book.title} className={classes.image}></img>}
     </div>
   )
 }

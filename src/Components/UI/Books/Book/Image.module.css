@@ -1,4 +1,6 @@
 .image-container {
-  width: 250px;
   margin: 8px 8px 0px 0px;
+}
+.image {
+  max-height: 200px;
 }
