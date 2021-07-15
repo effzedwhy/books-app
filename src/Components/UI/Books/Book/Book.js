@@ -16,6 +16,7 @@ const Book = ({ book }) => {
         <div className={classes.text}>
           {subtitle && <h3>{subtitle}</h3>}
           {textSnippet && <p>{textSnippet}</p>}
+          <p>More Info</p>
         </div>
       </div>
     </div>
