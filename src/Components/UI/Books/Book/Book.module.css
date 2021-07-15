@@ -1,11 +1,13 @@
 .bookLayout{
     border: 1px solid lightgray;
-    padding: 5px 2px;
-    margin: 2px;
+    margin: 5px;
     width: 300px;
     min-height: 200px;
     word-wrap: break-word;
     box-shadow: 2px 4px lightsteelblue;
+}
+.bookLayout p{
+    padding: 5px;
 }
 .bookLayout h2{
     font-weight: bold;
@@ -16,4 +18,10 @@
     font-weight: bold;
     font-size: medium;
     margin: 2px 0px;
+}
+.titleDiv{
+    border-bottom: 1px solid lightgray;
+    background-color: lightsteelblue;
+    color: white;
+    padding: 2px;
 }
