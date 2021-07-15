@@ -1,0 +1,19 @@
+.bookLayout{
+    border: 1px solid lightgray;
+    padding: 5px 2px;
+    margin: 2px;
+    width: 300px;
+    min-height: 200px;
+    word-wrap: break-word;
+    box-shadow: 2px 4px lightsteelblue;
+}
+.bookLayout h2{
+    font-weight: bold;
+    font-size: large;
+    margin: 4px 0px;
+}
+.bookLayout h3{
+    font-weight: bold;
+    font-size: medium;
+    margin: 2px 0px;
+}

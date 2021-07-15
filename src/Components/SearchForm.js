@@ -3,7 +3,7 @@ import { callAPI } from '../RestUtility/callAPI'
 
 import './SearchForm.css'
 
-const SearchForm = () => {
+const SearchForm = ({ setBookData }) => {
   const [userInput, setUserInput] = useState('');
 
   const inputChangeHandler = event => {
@@ -12,16 +12,20 @@ const SearchForm = () => {
     setUserInput(input)
   }
   const searchHandler = e => {
-    e.preventDefault()
+    e.preventDefault();
     if (userInput !== '') {
       console.log('calling book search API');
-      callAPI(userInput);
+      callAPI(userInput).then(result => {
+        console.log('result', result);
+        setBookData(result);
+        setUserInput('');
+      });
     }
   }
   return (
     <Fragment>
       <section className='form-container'>
-        <form className='search-form'>
+        <form className='search-form' onSubmit={searchHandler}>
           <label className='search-text'>Search</label>
           <div className='search-container'>
             <input
@@ -33,7 +37,7 @@ const SearchForm = () => {
             <button
               className='search-btn'
               disabled={userInput === ''}
-              onClick={searchHandler}
+              type='submit'
             >
               Search
             </button>
