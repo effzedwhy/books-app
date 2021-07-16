@@ -1,8 +1,8 @@
 import React from 'react'
 import classes from './Image.module.css'
 
-const Book = ({ book }) => {
-  const image = book.volumeInfo.imageLinks?.thumbnail
+const image = ({ book }) => {
+  const image = book?.volumeInfo.imageLinks?.thumbnail
 
   return (
     <div className={classes['image-container']}>
@@ -13,4 +13,4 @@ const Book = ({ book }) => {
   )
 }
 
-export default Book
+export default image
