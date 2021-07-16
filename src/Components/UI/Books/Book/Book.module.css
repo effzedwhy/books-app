@@ -21,6 +21,7 @@
 .bookLayout p {
   padding: 5px;
   font-size: 14px;
+  margin-bottom: 10px;
 }
 
 .info {
@@ -36,10 +37,26 @@
   margin-bottom: 10px;
 }
 
-.moreInfo {
+/* .moreInfo {
   border: none;
   text-decoration: none;
   padding: 8px;
   margin-top: 10px;
   cursor: pointer;
+} */
+
+.buy {
+  text-decoration: none;
+  font-weight: 800;
+  color: rgb(91, 120, 157);
+  
+}
+.buy:active,
+.buy:visited {
+  text-decoration: none;
+  color: rgb(91, 120, 157);
+}
+.buy:hover {
+  cursor: pointer;
+  border-bottom: 4px solid lightgray;
 }
