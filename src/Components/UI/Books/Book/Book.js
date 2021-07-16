@@ -9,7 +9,6 @@ const Book = ({ book }) => {
   const title = book.volumeInfo.title
   const subtitle = book.volumeInfo?.subtitle
   const textSnippet = book.searchInfo?.textSnippet
-  const buyLink = book.saleInfo?.buyLink
 
   // const moreButtonHandler = () => {
   //   setShowDetail(true)
@@ -25,16 +24,14 @@ const Book = ({ book }) => {
         <div className={classes.text}>
           {subtitle && <h3>{subtitle}</h3>}
           {textSnippet && <p>{textSnippet}</p>}
-          {buyLink && (
-            <a className={classes.buy} href={buyLink}>
-              Purchase Book
-            </a>
-          )}
+
           {/* <button className={classes.moreInfo} onClick={moreButtonHandler}>
             More Info
           </button> */}
         </div>
+
       </div>
+      
       {/* {showDetail && <BookDetail title={title} subtitle={subtitle} textSnippet={textSnippet} />} */}
     </div>
   )
