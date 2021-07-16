@@ -9,6 +9,8 @@ const Book = ({ book }) => {
   const title = book.volumeInfo.title
   const subtitle = book.volumeInfo?.subtitle
   const textSnippet = book.searchInfo?.textSnippet
+  const image = book?.volumeInfo.imageLinks?.thumbnail
+  const buyLink = book.saleInfo?.buyLink
 
   // const moreButtonHandler = () => {
   //   setShowDetail(true)
@@ -20,7 +22,7 @@ const Book = ({ book }) => {
         <h2>{title}</h2>
       </div>
       <div className={classes.info}>
-        <Image book={book} />
+        <Image image={image} buyLink={buyLink} title={title} />
         <div className={classes.text}>
           {subtitle && <h3>{subtitle}</h3>}
           {textSnippet && <p>{textSnippet}</p>}
@@ -31,7 +33,7 @@ const Book = ({ book }) => {
         </div>
 
       </div>
-      
+
       {/* {showDetail && <BookDetail title={title} subtitle={subtitle} textSnippet={textSnippet} />} */}
     </div>
   )
