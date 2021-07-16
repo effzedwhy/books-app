@@ -1,7 +1,8 @@
 nav {
   width: 100vw;
+  max-width: 100%;
   height: 60px;
-  background-color: lightsteelblue;
+  background-color: #bbf3f4;
   display: flex;
   flex-direction: row;
   align-items: center;

@@ -5,6 +5,7 @@ import Image from './Image'
 
 const Book = ({ book }) => {
   // const [showDetail, setShowDetail] = useState(false)
+  console.log(book);
   const title = book.volumeInfo.title
   const subtitle = book.volumeInfo?.subtitle
   const textSnippet = book.searchInfo?.textSnippet

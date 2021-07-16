@@ -16,7 +16,6 @@ const SearchForm = ({ setBookData }) => {
     if (userInput !== '') {
       console.log('calling book search API')
       callAPI(userInput).then(result => {
-        console.log('result', result)
         setBookData(result)
         setUserInput('')
       })
