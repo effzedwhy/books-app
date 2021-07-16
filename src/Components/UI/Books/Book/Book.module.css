@@ -1,5 +1,4 @@
 .bookLayout {
-  /* border: 1px solid lightgray; */
   padding: 16px 16px;
   margin: 16px;
   width: 300px;
@@ -31,8 +30,8 @@
 
 .titleDiv {
   border-bottom: 1px solid lightgray;
-  background-color: #bbf3f4;
-  color: black;
+  background-color: #7dd3d5;
+  color: rgb(55, 55, 55);
   padding: 8px;
   margin-bottom: 10px;
 }
@@ -44,4 +43,3 @@
   margin-top: 10px;
   cursor: pointer;
 } */
-

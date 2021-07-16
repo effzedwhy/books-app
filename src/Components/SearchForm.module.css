@@ -31,7 +31,7 @@
   width: 400px;
   padding: 5px;
   border: 1px solid lightslategray;
-  box-shadow: 2px 4px lightsteelblue;
+  box-shadow: rgb(0 0 0 / 50%) 2px 2px 10px -4px;
 }
 .search-box:focus {
   outline: none;
@@ -43,7 +43,7 @@
   border: 1px solid lightslategray;
   padding: 0 16px;
   height: 40px;
-  box-shadow: 2px 4px lightsteelblue;
+  box-shadow: rgb(0 0 0 / 50%) 2px 2px 10px -4px;
 }
 
 .search-btn:disabled {

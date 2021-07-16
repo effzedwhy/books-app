@@ -2,17 +2,22 @@ nav {
   width: 100vw;
   max-width: 100%;
   height: 60px;
-  background-color: #bbf3f4;
+  background-color: #7dd3d5;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-nav > h2 {
+.h2 {
   font-size: 20px;
   font-weight: 700;
-  color: #e5989b;
+  color: #ffffff;
   flex: 8;
   margin: 0 20px;
+}
+
+.h2:visited,
+.h2:hover {
+  color: #ffffff;
 }
 
 h2 > a {

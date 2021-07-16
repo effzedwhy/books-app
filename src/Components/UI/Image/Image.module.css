@@ -7,20 +7,18 @@
 .buy {
   text-decoration: none;
   font-weight: 800;
-  color: rgb(123, 165, 221);
-  
+  color: #339b9d;
 }
 .buy:active,
 .buy:visited {
   text-decoration: none;
-  color: rgb(20, 70, 134);
+  color: #339b9d;
 }
 .buy:hover {
   cursor: pointer;
-  /* border-bottom: 4px solid lightgray; */
 }
-.bottomSection{
+.bottomSection {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  margin-top: 5px;
 }
