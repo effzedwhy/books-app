@@ -1,6 +1,6 @@
 import React from 'react'
 import classes from './Book.module.css'
-import Image from './Image'
+import Image from '../../Image/Image'
 // import BookDetail from '../../BookModal/BookDetail'
 
 const Book = ({ book }) => {
